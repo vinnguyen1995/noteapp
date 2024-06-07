@@ -6,31 +6,20 @@
 //
 
 import UIKit
-protocol NoteCellDelegate {
-    func noteCellDidSelect(_ cell: NoteDetails)
-}
+
 class NoteCell: UITableViewCell {
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblDescription: UILabel!
-    
-    var delegate: NoteCellDelegate?
+    @IBOutlet weak var lblTitle: UILabel?
+    @IBOutlet weak var lblDescription: UILabel?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        lblTitle.numberOfLines = 0
-        lblDescription.numberOfLines = 3
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        delegate?.noteCellDidSelect(NoteDetails())
+        lblTitle?.numberOfLines = 0
+        lblDescription!.numberOfLines = 3
     }
     
     func binding(note: Note) {
-        lblTitle.text = note.title
-        lblDescription.text = note.description
+        lblTitle?.text = note.title
+        lblDescription!.text = note.description
     }
-    
 }
+

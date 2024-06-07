@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EbV-02-uK4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EbV-02-uK4">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -34,41 +34,48 @@
             </objects>
             <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
         </scene>
-        <!--Note Details-->
-        <scene sceneID="9qd-9f-vgy">
+        <!--Note Details View Controller-->
+        <scene sceneID="YZQ-xt-HSL">
             <objects>
-                <viewController storyboardIdentifier="showNoteDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5AF-x8-ObG" customClass="NoteDetails" customModule="NoteApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tp9-Zx-Oep">
+                <viewController storyboardIdentifier="notedetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IOG-Pg-B2x" customClass="NoteDetailsViewController" customModule="NoteApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BQb-4X-jfG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE8-b9-Z6I">
-                                <rect key="frame" x="16" y="59" width="52" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKO-n6-kcM">
-                                <rect key="frame" x="16" y="96" width="361" height="722"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DVm-HS-Yk8">
+                                <rect key="frame" x="16" y="59" width="361" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfu-oQ-GQV">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="37.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-gJ-Lto">
+                                        <rect key="frame" x="0.0" y="45.666666666666671" width="361" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="OvP-o1-Umf"/>
+                        <viewLayoutGuide key="safeArea" id="tPr-Gy-y24"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DVm-HS-Yk8" firstAttribute="top" secondItem="tPr-Gy-y24" secondAttribute="top" id="AkF-Bm-5sh"/>
+                            <constraint firstItem="DVm-HS-Yk8" firstAttribute="leading" secondItem="tPr-Gy-y24" secondAttribute="leading" constant="16" id="F4z-zG-F5x"/>
+                            <constraint firstItem="tPr-Gy-y24" firstAttribute="trailing" secondItem="DVm-HS-Yk8" secondAttribute="trailing" constant="16" id="IGv-py-Hds"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="evJ-z1-Te8"/>
                     <connections>
-                        <outlet property="descriptionLabel" destination="RKO-n6-kcM" id="nKS-uV-xBY"/>
-                        <outlet property="titleLabel" destination="cE8-b9-Z6I" id="a6f-Kl-ksj"/>
+                        <outlet property="descriptionLabel" destination="PcT-gJ-Lto" id="1re-Xo-41P"/>
+                        <outlet property="titleLabel" destination="Vfu-oQ-GQV" id="wvl-wx-fR1"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Chj-y6-idv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFt-vF-LsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1784" y="-35"/>
+            <point key="canvasLocation" x="1960" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xNw-kd-z7C">

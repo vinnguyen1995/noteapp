@@ -15,7 +15,7 @@
 		414881A62C114EBE00EE9561 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 414881A52C114EBE00EE9561 /* Base */; };
 		414881B02C11895700EE9561 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414881AE2C11895700EE9561 /* NoteCell.swift */; };
 		414881B12C11895700EE9561 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414881AF2C11895700EE9561 /* NoteCell.xib */; };
-		414881B32C1198FE00EE9561 /* NoteDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414881B22C1198FE00EE9561 /* NoteDetails.swift */; };
+		414881B32C1198FE00EE9561 /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414881B22C1198FE00EE9561 /* NoteDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		414881A72C114EBE00EE9561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		414881AE2C11895700EE9561 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		414881AF2C11895700EE9561 /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
-		414881B22C1198FE00EE9561 /* NoteDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetails.swift; sourceTree = "<group>"; };
+		414881B22C1198FE00EE9561 /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				414881992C114EBD00EE9561 /* AppDelegate.swift */,
 				4148819B2C114EBD00EE9561 /* SceneDelegate.swift */,
 				4148819D2C114EBD00EE9561 /* ViewController.swift */,
-				414881B22C1198FE00EE9561 /* NoteDetails.swift */,
+				414881B22C1198FE00EE9561 /* NoteDetailsViewController.swift */,
 				414881AD2C11894400EE9561 /* Cells */,
 				4148819F2C114EBD00EE9561 /* Main.storyboard */,
 				414881A22C114EBE00EE9561 /* Assets.xcassets */,
@@ -156,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				414881B32C1198FE00EE9561 /* NoteDetails.swift in Sources */,
+				414881B32C1198FE00EE9561 /* NoteDetailsViewController.swift in Sources */,
 				4148819E2C114EBD00EE9561 /* ViewController.swift in Sources */,
 				4148819A2C114EBD00EE9561 /* AppDelegate.swift in Sources */,
 				4148819C2C114EBD00EE9561 /* SceneDelegate.swift in Sources */,
